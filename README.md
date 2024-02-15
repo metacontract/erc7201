@@ -1,6 +1,6 @@
 # ERC-7201 Storage Location Calculator
 
-This utility repository provides tools for calculating storage locations according to the ERC-7201 standard for Ethereum smart contracts.
+This utility repository provides tools for calculating storage locations according to the [ERC-7201](https://ercs.ethereum.org/ERCS/erc-7201) standard for Ethereum smart contracts.
 
 This ERC is proposed to enable developers to efficiently manage storage conflict risks during upgrades and other changes by calculating storage slots themselves, rather than relying on the compiler to determine them.
 
