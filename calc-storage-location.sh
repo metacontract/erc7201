@@ -17,6 +17,11 @@ hash=$(cast k $1)
 last_16_of_hash=${hash: -16}
 # echo "last 16-digits of hash:                                 $last_16_of_hash"
 last_16_of_hash_decimal=$((16#$last_16_of_hash))
+# Check if the last 16 digits of hash decimal is 0
+if [ "$last_16_of_hash_decimal" -eq 0 ]; then
+    echo "Error: CANNOT calculate the storage location, because the decimal value of the last 16 digits of the hash is 0. Aborting..."
+    exit 1
+fi
 # echo "last 16-digits of hash decimal:         $last_16_of_hash_decimal"
 last_16_of_hash_minus_one_decimal=$((last_16_of_hash_decimal - 1))
 # echo "last 16-digits of hash minus 1 decimal: $last_16_of_hash_minus_one_decimal"
