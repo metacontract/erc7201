@@ -10,16 +10,16 @@ The utility facilitates easy and accurate storage location calculations, streaml
 
 1. Open your terminal.
 
-2. Navigate to the directory where the `named-hash.sh` script is located.
+2. Navigate to the directory where the `calc-storage-location.sh` script is located.
 
 3. Run the script by entering the following command, replacing <name> with the seed name for your storage location:
     ```bash
-    sh named-hash.sh <name>
+    sh calc-storage-location.sh <name>
     ```
 
     For example, if your seed name is "example.main", you would enter:
     ```bash
-    sh named-hash.sh example.main
+    sh calc-storage-location.sh example.main
     ```
 
 The script will calculate and output the corresponding storage location, which you can then use in your smart contract development to explicitly define storage slots, helping to manage storage conflict risks efficiently.
