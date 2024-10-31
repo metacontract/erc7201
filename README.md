@@ -1,3 +1,6 @@
+> [!IMPORTANT]
+> The `cast index-erc7201` feature has been integrated into [Foundry](https://github.com/foundry-rs/foundry). Please make use of this feature.
+
 # ERC-7201 Storage Location Calculator
 
 This utility repository provides tools for calculating storage locations according to the [ERC-7201](https://ercs.ethereum.org/ERCS/erc-7201) standard for Ethereum smart contracts.
